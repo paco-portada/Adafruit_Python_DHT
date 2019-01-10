@@ -21,30 +21,19 @@ able to compile and download Python extensions with **pip**:
 On Raspbian or Beaglebone Black's Debian/Ubuntu image you can ensure your
 system is ready by running one or two of the following sets of commands:
 
-Python 2:
-
-````sh
-sudo apt-get update
-sudo apt-get install python-pip
-sudo python -m pip install --upgrade pip setuptools wheel
-````
-
 Python 3:
 
 ````sh
 sudo apt-get update
 sudo apt-get install python3-pip
 sudo python3 -m pip install --upgrade pip setuptools wheel
+
 ````
 
 ### Install with pip
 
 Use `pip` to install from PyPI.
 
-Python 2:
-
-```sh
-sudo pip install Adafruit_DHT
 ```
 
 Python 3:
@@ -59,13 +48,6 @@ First download the library source code from the [GitHub releases
 page](https://github.com/adafruit/Adafruit_Python_DHT/releases), unzipping the
 archive, and execute:
 
-Python 2:
-
-```sh
-cd Adafruit_Python_DHT
-sudo python setup.py install
-```
-
 Python 3:
 
 ```sh
@@ -78,10 +60,17 @@ version:
 
 ```sh
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+cd Adafruit_Python_DHT
+sudo python3 setup.py install
 ```
 
 Usage
 -----
+```sh
+cd Adafruit_Python_DHT
+cd examples
+sudo  ./AdafruitDHT.py  11  4
+```
 
 See example of usage in the examples folder.
 
